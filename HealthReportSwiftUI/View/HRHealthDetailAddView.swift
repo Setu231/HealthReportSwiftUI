@@ -5,7 +5,7 @@
 //  Created by Setu Desai on 2/12/24.
 //
 
-import SwiftUI
+import SimplifySwiftUIPackage
 
 struct HRHealthDetailAddView: View {
     
@@ -39,8 +39,7 @@ struct HRHealthDetailAddView: View {
                 isAddingScreen = false
             }, label: {
                 Text(isUpdating ? "Update Data" : "Add New Data")
-                    .fontWeight(.heavy)
-                    .font(.title3)
+                    .textFont(fontStyle: .Medium07)
                     .frame(maxWidth: .infinity)
                     .padding()
                     .foregroundStyle(.white)

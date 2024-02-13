@@ -5,7 +5,7 @@
 //  Created by Setu Desai on 2/12/24.
 //
 
-import SwiftUI
+import SimplifySwiftUIPackage
 
 struct HRLoginView: View {
     
@@ -14,9 +14,8 @@ struct HRLoginView: View {
     var body: some View {
         VStack(alignment: .center) {
             Text("Login")
+                .textFont(fontStyle: .XXLarge07)
                 .foregroundLinearGradient(colors: [.pink, .purple], startPoint: .leading, endPoint: .trailing)
-                .fontWeight(.heavy)
-                .font(.largeTitle)
                 .frame(maxWidth: .infinity)
             Spacer().frame(maxHeight: 60)
             TextField("Username", text: $hrLoginViewModel.usernameTextfield)
@@ -28,8 +27,7 @@ struct HRLoginView: View {
                 hrLoginViewModel.loginAccount()
             }, label: {
                 Text("Log In")
-                    .fontWeight(.heavy)
-                    .font(.title3)
+                    .textFont(fontStyle: .Medium07)
                     .frame(maxWidth: .infinity)
                     .padding()
                     .foregroundColor(.white)

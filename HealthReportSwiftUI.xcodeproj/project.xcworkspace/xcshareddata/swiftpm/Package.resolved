@@ -116,6 +116,15 @@
         "revision" : "65e8f29b2d63c4e38e736b25c27b83e012159be8",
         "version" : "1.25.2"
       }
+    },
+    {
+      "identity" : "swiftifyuipackage",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Setu231/SwiftifyUIPackage",
+      "state" : {
+        "branch" : "SwiftUIMiniProjects",
+        "revision" : "b51113c185bfb66d2cadc46dc9eb0caeee0d6e67"
+      }
     }
   ],
   "version" : 2
